@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #26352c;
+  background: #f4f3e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f3e9;
+  background-image: linear-gradient(135deg, rgba(227, 231, 202, 0.42), transparent 45%), linear-gradient(315deg, rgba(248, 224, 193, 0.3), transparent 42%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.leaflet-container {
+  height: 320px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.food-hero {
+  min-height: 570px;
+  height: min(72svh, 690px);
+}
+
+.food-hero-inner {
+  width: min(100% - 3rem, 80rem);
+  margin-inline: auto;
+}
+
+.food-hero-title {
+  max-width: 14ch;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.food-hero-copy {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+@media (min-width: 768px) {
+  .food-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-hero {
+    min-height: 550px;
+    height: 72svh;
+  }
+
+  .food-hero-inner {
+    width: min(100% - 2rem, 80rem);
+  }
+
+  .food-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .food-hero-copy {
+    font-size: 1rem;
+  }
+}
+
+::selection {
+  color: #fff;
+  background: #356c42;
+}

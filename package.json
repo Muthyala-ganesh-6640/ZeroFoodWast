@@ -1,0 +1,17 @@
+{
+  "name": "zerofoodwast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev -- --host 0.0.0.0\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
